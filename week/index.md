@@ -35,7 +35,7 @@ A day dedicated to highlights of recent research on AI verification.
 <div class="week-event" markdown="1">
 <div class="week-date">Friday, November 5</div>
 
-### Co-located Workshop on Safeguarded AI
+### Co-located Workshop
 {: #co-located-workshop}
 
 Details will be announced.

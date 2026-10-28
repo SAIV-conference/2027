@@ -15,6 +15,6 @@ SAIV builds on a nine-year legacy as the successor to the [FoMLAS](https://fomla
 - **October 31 – November 1:** [Autumn School]({{ site.baseurl }}/week/#autumn-school)
 - **November 2–3:** [Main Conference]({{ site.baseurl }}/week/#main-conference)
 - **November 4:** [Research Highlights]({{ site.baseurl }}/week/#research-highlights)
-- **November 5:** [Co-located workshop on safeguarded AI]({{ site.baseurl }}/week/#co-located-workshop)
+- **November 5:** [Co-located workshop]({{ site.baseurl }}/week/#co-located-workshop)
 
 The call for papers, important dates, venue, and registration details will be announced on this website.
