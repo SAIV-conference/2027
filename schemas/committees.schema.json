@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SAIV-conference/2027/schemas/committees.schema.json",
+  "title": "SAIV committee assignments (_data/committees.yml)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "title", "order", "members"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "title": {
+        "type": "string"
+      },
+      "description": {
+        "description": "Optional Markdown shown under the group heading.",
+        "type": "string"
+      },
+      "order": {
+        "enum": ["listed", "alphabetical"]
+      },
+      "members": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["person"],
+          "properties": {
+            "person": {
+              "description": "An id from _data/people.yml.",
+              "type": "string"
+            },
+            "role": {
+              "description": "Optional role within the group, e.g. 'Chair'.",
+              "type": "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}

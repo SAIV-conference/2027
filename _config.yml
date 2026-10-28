@@ -1,0 +1,192 @@
+title: SAIV 2027
+#preposition: at
+description: >-
+  The 10th International Symposium on AI Verification in London, UK, October 31 – November 5, 2027
+baseurl: /2027 # the subpath of your site, e.g. /blog; comment out for local deployment
+url: "https://www.aiverification.org" # the base hostname & protocol for your site, e.g. https://example.com
+
+remote_theme: "DigitaleGesellschaft/jekyll-theme-conference@v3.6.1"
+
+# Build settings
+markdown: kramdown
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-include-cache
+  - jekyll-fa-icons
+
+svg:
+  optimize: true
+
+# Additional exclude from processing
+exclude:
+  - vendor
+  - .github/
+  - README.md
+  - LICENSE.md
+  - REDISTRIBUTED.md
+  - jekyll-theme-conference.gemspec
+  - purgecss.config.js
+  - schemas/
+  - scripts/
+  - _tools/
+  - requirements.txt
+  - CHANGELOG.md
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+
+# Collections and their defaults
+collections:
+  talks:
+    output: true
+    permalink: /:collection/:title/
+  speakers:
+    output: true
+    permalink: /:collection/:title/
+  rooms:
+    output: true
+    permalink: /:collection/:title/
+
+defaults:
+  - scope:
+      path: ""
+      type: talks
+    values:
+      layout: talk
+  - scope:
+      path: ""
+      type: speakers
+    values:
+      layout: speaker
+  - scope:
+      path: ""
+      type: rooms
+    values:
+      layout: room
+
+conference:
+  # Language
+  lang: en
+
+  # Show theme errors:
+  show_errors: False
+
+  # Navigation bar
+  navigation:
+    logo:
+      name: SAIV
+      img: 'logo.svg'
+      #url: ''
+    links:
+      - name: About
+        relative_url: /about/
+      - name: SAIV Week
+        relative_url: /week/
+      - name: Call for Papers
+        relative_url: /call/
+      - name: Committees
+        relative_url: /committees/
+      - name: Venue
+        relative_url: /venue/
+      - name: Editions
+        editions: /editions.json
+
+  # Link Preview for Sharing
+  link_preview:
+    # also adapt "preposition" property at top for more meaningful descriptions
+    disable: false
+    #img:
+      #twitter: 'twitter_preview.png'      # inside /assets/images/
+      #open_graph: 'facebook_preview.png'  # inside /assets/images/
+
+  # Main landing page
+  main:
+    logo:
+        img: 'logo_full.svg'
+    links:
+    - name: SAIV Week
+      relative_url: /week/
+    - name: Call for Papers
+      relative_url: /call/
+    - name: Committees
+      relative_url: /committees/
+
+  # Information boxes
+  info_bars:
+    - text: "**Preliminary information.** SAIV 2027 will be held as a standalone event for the first time. All dates are preliminary; the venue, paper deadlines, and registration details will be announced soon."
+      color: warning
+      main_only: true
+
+  # Live indications
+  #live:
+    #date: 21.07.2025
+    #timezone: GMT+1
+    #stop:       240  # in minutes
+    #streaming:
+    #  enable: true
+      #pause:     60  # in minutes
+      #prepend:    5  # in minutes
+      #extend:     5  # in minutes
+    #demo:
+      #enable: false
+      #duration: 300  # in seconds
+      #pause:     10  # in seconds
+
+  talks:
+    ## Talk categories
+    main_categories:
+      - name: Keynote
+        color: danger
+      - name: Invited Talk
+        color: success
+      - name: Presentation
+        color: warning
+      - name: VNN-COMP
+        color: info
+      - name: Discussion
+        color: dark
+      - name: Break
+        color: light
+      # - name: Posters
+        # color: light
+    ## Hide icons on talk overview page
+    hide_icons: false
+    ## Tracks
+    # tracks:
+      # - name: Track A
+        # color: success
+
+  speakers:
+    ## Show first and last name
+    show_firstname: true
+
+  #location:
+    ## Disable links to locations
+    #hide: true
+    ## URL of location / room overview page
+    #url: '/location'
+    ## Main page title shown on location/room navigation bar
+    #navbar_title: 'Location'
+    ## Show map on location main page.  Set `map: false` if you don't want to
+    ## display it.
+    #map:
+      ## Initial map center point
+      #home_coord: 45.801678, 15.973169
+      ## Alternative map providers can be found on https://leaflet-extras.github.io/leaflet-providers/preview/
+      ## The following do match the Bootstrap design not too badly:
+      ##   - Thunderforest.Neighbourhood
+      ##   - Esri.WorldTopoMap
+      #map_provider: "OpenStreetMap.Mapnik"
+      #default_zoom: 17
+
+  program:
+    # URL of program page
+    url: '/program'
+
+    # Time steps in program table
+    time_steps: 15 # in minutes
+
+    # Show intermediary time steps (next to full hours)
+    show_alltimes: true

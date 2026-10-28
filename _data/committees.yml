@@ -1,0 +1,26 @@
+# Committee assignments for SAIV 2027.
+#
+# Each group lists people by their `id` in _data/people.yml; profile details
+# (affiliation, links, photo) live only there. Groups with
+# `order: alphabetical` must be sorted by each person's `sort_name`
+# (checked by scripts/validate_data.py). Only add people who have agreed to
+# serve: everything in this repository is public.
+
+- id: program-chairs
+  title: Program Chairs
+  order: listed
+  members:
+    - person: djordje-zikelic
+    - person: corina-pasareanu
+
+- id: steering-committee
+  title: Steering Committee
+  order: alphabetical
+  members:
+    - person: guy-avni
+    - person: mirco-giacobbe
+    - person: taylor-t-johnson
+    - person: guy-katz
+    - person: anna-lukina
+    - person: nina-narodytska
+    - person: christian-schilling
