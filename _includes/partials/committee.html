@@ -1,0 +1,19 @@
+{%- comment -%}
+  Render one committee from _data/committees.yml as a grid of person cards.
+  Usage: {% include partials/committee.html id="steering-committee" %}
+{%- endcomment -%}
+{%- assign group = site.data.committees | where: "id", include.id | first -%}
+{%- if group %}
+<section class="committee mb-4" id="{{ group.id }}">
+  <h2 class="h3 mb-3">{{ group.title }}</h2>
+  {%- if group.description %}
+  {{ group.description | markdownify }}
+  {%- endif %}
+  <div class="row">
+    {%- for member in group.members -%}
+      {%- assign person = site.data.people | where: "id", member.person | first -%}
+      {%- include partials/person_card.html person=person role=member.role -%}
+    {%- endfor %}
+  </div>
+</section>
+{%- endif -%}

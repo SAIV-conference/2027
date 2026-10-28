@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/SAIV-conference/2027/schemas/people.schema.json",
+  "title": "SAIV public people registry (_data/people.yml)",
+  "description": "One record per person shown on the website. Public professional information only: no email addresses, phone numbers, or private notes.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": ["id", "name", "sort_name", "affiliation", "country", "website", "orcid", "google_scholar", "dblp", "photo", "photo_source", "checked_on"],
+    "properties": {
+      "id": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$"
+      },
+      "name": {
+        "description": "Display name as the person writes it, including diacritics.",
+        "type": "string",
+        "minLength": 2
+      },
+      "sort_name": {
+        "description": "ASCII family-name-first key used for alphabetical committee order, e.g. 'Johnson, Taylor'.",
+        "type": "string",
+        "pattern": "^[A-Za-z' -]+, [A-Za-z' .-]+$"
+      },
+      "affiliation": {
+        "type": "string",
+        "minLength": 2
+      },
+      "country": {
+        "type": "string",
+        "minLength": 2
+      },
+      "website": {
+        "type": ["string", "null"],
+        "pattern": "^https?://"
+      },
+      "orcid": {
+        "type": ["string", "null"],
+        "pattern": "^https://orcid\\.org/[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{3}[0-9X]$"
+      },
+      "google_scholar": {
+        "type": ["string", "null"],
+        "pattern": "^https://scholar\\.google\\.com/citations\\?user=[A-Za-z0-9_-]{12}$"
+      },
+      "dblp": {
+        "type": ["string", "null"],
+        "pattern": "^https://dblp\\.org/pid/[0-9A-Za-z/_-]+$"
+      },
+      "photo": {
+        "description": "File name under assets/images/people/ (320x320 WebP, at most 64 KB), or null for an initials placeholder.",
+        "type": ["string", "null"],
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*\\.webp$"
+      },
+      "photo_source": {
+        "description": "Page on the person's own or institutional site where the photo was obtained.",
+        "type": ["string", "null"],
+        "pattern": "^https?://"
+      },
+      "checked_on": {
+        "description": "Date (YYYY-MM-DD) the record was last checked against its sources.",
+        "type": "string",
+        "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+      }
+    }
+  }
+}

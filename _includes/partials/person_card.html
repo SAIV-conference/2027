@@ -1,0 +1,42 @@
+{%- comment -%}
+  One person from _data/people.yml as a card with photo and profile links.
+  Parameters: person (record), role (optional label, e.g. "Chair").
+{%- endcomment -%}
+{%- assign p = include.person -%}
+<div class="col-12 col-sm-6 col-lg-4 mb-3">
+  <div class="person-card h-100">
+    {%- if p.photo %}
+    <img class="person-photo" src="{{ site.baseurl }}/assets/images/people/{{ p.photo }}" alt="Photo of {{ p.name }}" width="96" height="96" loading="lazy" />
+    {%- else %}
+    {%- assign name_parts = p.name | split: " " -%}
+    <div class="person-photo person-initials" aria-hidden="true">{{ name_parts.first | slice: 0 }}{{ name_parts.last | slice: 0 }}</div>
+    {%- endif %}
+    <div class="person-body">
+      <h3 class="person-name">
+        {%- if p.website -%}
+          <a href="{{ p.website }}">{{ p.name }}</a>
+        {%- else -%}
+          {{ p.name }}
+        {%- endif -%}
+      </h3>
+      {%- if include.role %}
+      <div class="person-role">{{ include.role }}</div>
+      {%- endif %}
+      <div class="person-affiliation">{{ p.affiliation }}{% if p.country %}, {{ p.country }}{% endif %}</div>
+      <div class="person-links">
+        {%- if p.website %}
+        <a href="{{ p.website }}" title="Website" aria-label="Website of {{ p.name }}"><i class="fas fa-globe" aria-hidden="true"></i></a>
+        {%- endif %}
+        {%- if p.orcid %}
+        <a href="{{ p.orcid }}" title="ORCID" aria-label="ORCID record of {{ p.name }}"><i class="fab fa-orcid" aria-hidden="true"></i></a>
+        {%- endif %}
+        {%- if p.google_scholar %}
+        <a href="{{ p.google_scholar }}" title="Google Scholar" aria-label="Google Scholar profile of {{ p.name }}"><i class="fas fa-graduation-cap" aria-hidden="true"></i></a>
+        {%- endif %}
+        {%- if p.dblp %}
+        <a href="{{ p.dblp }}" title="dblp" aria-label="dblp entry of {{ p.name }}" class="person-link-text">dblp</a>
+        {%- endif %}
+      </div>
+    </div>
+  </div>
+</div>

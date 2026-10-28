@@ -1,0 +1,120 @@
+# Public people registry: one record per person shown on the website.
+# Committee membership lives in committees.yml; field rules are in README.md
+# and schemas/people.schema.json. Public professional information only.
+
+- id: djordje-zikelic
+  name: Đorđe Žikelić
+  sort_name: Zikelic, Djordje
+  affiliation: Nanyang Technological University
+  country: Singapore
+  website: https://djordjezikelic.github.io/
+  orcid: https://orcid.org/0000-0002-4681-1699
+  google_scholar: https://scholar.google.com/citations?user=D3CQXf0AAAAJ
+  dblp: https://dblp.org/pid/150/8968
+  photo: djordje-zikelic.webp
+  photo_source: https://djordjezikelic.github.io/
+  checked_on: 2026-10-28
+
+- id: corina-pasareanu
+  name: Corina S. Pasareanu
+  sort_name: Pasareanu, Corina
+  affiliation: Carnegie Mellon University
+  country: United States
+  website: https://www.andrew.cmu.edu/user/pcorina/
+  orcid: https://orcid.org/0000-0002-5579-6961
+  google_scholar: https://scholar.google.com/citations?user=pwIuivQAAAAJ
+  dblp: https://dblp.org/pid/03/4368
+  photo: corina-pasareanu.webp
+  photo_source: https://www.andrew.cmu.edu/user/pcorina/
+  checked_on: 2026-10-28
+
+- id: guy-avni
+  name: Guy Avni
+  sort_name: Avni, Guy
+  affiliation: University of Haifa
+  country: Israel
+  website: https://sites.google.com/view/gavni
+  orcid: https://orcid.org/0000-0001-5588-8287
+  google_scholar: https://scholar.google.com/citations?user=tySIznAAAAAJ
+  dblp: https://dblp.org/pid/07/10110
+  photo: guy-avni.webp
+  photo_source: https://sites.google.com/view/gavni
+  checked_on: 2026-10-28
+
+- id: mirco-giacobbe
+  name: Mirco Giacobbe
+  sort_name: Giacobbe, Mirco
+  affiliation: University of Birmingham
+  country: United Kingdom
+  website: https://mircogiacobbe.github.io/
+  orcid: https://orcid.org/0000-0001-8180-0904
+  google_scholar: null
+  dblp: https://dblp.org/pid/134/7846
+  photo: mirco-giacobbe.webp
+  photo_source: https://mircogiacobbe.github.io/
+  checked_on: 2026-10-28
+
+- id: taylor-t-johnson
+  name: Taylor T. Johnson
+  sort_name: Johnson, Taylor
+  affiliation: Vanderbilt University
+  country: United States
+  website: https://www.taylortjohnson.com/
+  orcid: https://orcid.org/0000-0001-8021-9923
+  google_scholar: https://scholar.google.com/citations?user=MdTkXNYAAAAJ
+  dblp: https://dblp.org/pid/96/11505
+  photo: taylor-t-johnson.webp
+  photo_source: https://www.taylortjohnson.com/
+  checked_on: 2026-10-28
+
+- id: guy-katz
+  name: Guy Katz
+  sort_name: Katz, Guy
+  affiliation: Hebrew University of Jerusalem
+  country: Israel
+  website: https://www.katz-lab.com/
+  orcid: https://orcid.org/0000-0001-5292-801X
+  google_scholar: https://scholar.google.com/citations?user=3nYG5BMAAAAJ
+  dblp: https://dblp.org/pid/23/10321
+  photo: guy-katz.webp
+  photo_source: https://www.katz-lab.com/
+  checked_on: 2026-10-28
+
+- id: anna-lukina
+  name: Anna Lukina
+  sort_name: Lukina, Anna
+  affiliation: Delft University of Technology
+  country: Netherlands
+  website: https://annalukina.com/
+  orcid: https://orcid.org/0000-0001-9525-0333
+  google_scholar: https://scholar.google.com/citations?user=ztyK2toAAAAJ
+  dblp: https://dblp.org/pid/186/9691
+  photo: anna-lukina.webp
+  photo_source: https://annalukina.com/annalukina
+  checked_on: 2026-10-28
+
+- id: nina-narodytska
+  name: Nina Narodytska
+  sort_name: Narodytska, Nina
+  affiliation: VMware Research by Broadcom
+  country: United States
+  website: null
+  orcid: https://orcid.org/0000-0002-5181-4560
+  google_scholar: null
+  dblp: https://dblp.org/pid/87/3366
+  photo: null
+  photo_source: null
+  checked_on: 2026-10-28
+
+- id: christian-schilling
+  name: Christian Schilling
+  sort_name: Schilling, Christian
+  affiliation: Aalborg University
+  country: Denmark
+  website: https://www.christianschilling.net/
+  orcid: https://orcid.org/0000-0003-3658-1065
+  google_scholar: https://scholar.google.com/citations?user=d_uKdigAAAAJ
+  dblp: https://dblp.org/pid/72/2103-1
+  photo: christian-schilling.webp
+  photo_source: https://www.christianschilling.net/
+  checked_on: 2026-10-28
