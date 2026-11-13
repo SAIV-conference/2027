@@ -14,6 +14,8 @@ The site is built by GitHub Pages (classic build from `main`, `/`) with the [jek
 | Call for Papers | `call/index.md` |
 | Committees | `committees/index.md`, rendered from the people datastore |
 | Venue | `venue/index.md` |
+| VNN-COMP | `vnn-comp/index.md` |
+| History | `history/index.md` (past editions, CAV co-locations, proceedings) |
 
 ## People datastore
 

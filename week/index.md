@@ -3,7 +3,7 @@ layout: page
 title: SAIV Week 2027
 ---
 
-SAIV 2027 is organized as a week of events in London, United Kingdom. *All dates are preliminary and subject to change; details will be announced on this website.*
+The 2027 Symposium on AI Verification (SAIV 2027) is organized as a week of events in London, United Kingdom. *All dates are preliminary and subject to change; details will be announced on this website.*
 
 <div class="week-event" markdown="1">
 <div class="week-date">Sunday, October 31 – Monday, November 1</div>

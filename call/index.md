@@ -5,7 +5,7 @@ title: Call for Papers
 
 *This is a preliminary call. The full call, with submission categories, page limits, the review process, important dates, and the submission website, will be published soon.*
 
-SAIV 2027 invites submissions on all aspects of AI verification, broadly construed, presenting theoretical results, novel algorithms, tools, benchmarks, case studies, and empirical evaluations. We welcome contributions from academia and industry, and from the formal methods, AI, machine learning, security, and control communities.
+The 2027 Symposium on AI Verification (SAIV 2027) invites submissions on all aspects of AI verification, broadly construed, presenting theoretical results, novel algorithms, tools, benchmarks, case studies, and empirical evaluations. We welcome contributions from academia and industry, and from the formal methods, AI, machine learning, security, and control communities.
 
 ## Important Dates
 
@@ -45,3 +45,5 @@ The topics covered by SAIV include, but are not limited to, the following:
 
 - Industrial case studies and lessons learned in verifying and deploying AI systems
 - Tools, benchmarks, and competitions for AI verification
+
+SAIV 2027 is also planned to host the 8th International Verification of Neural Networks Competition (VNN-COMP 2027); see the [VNN-COMP page]({{ site.baseurl }}/vnn-comp/).
