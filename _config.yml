@@ -75,6 +75,8 @@ conference:
 
   # Navigation bar
   navigation:
+    # collapse into the hamburger menu below 992px, so the eight entries never wrap
+    breakpoint: lg
     logo:
       name: SAIV
       img: 'logo.svg'
@@ -90,6 +92,10 @@ conference:
         relative_url: /committees/
       - name: Venue
         relative_url: /venue/
+      - name: VNN-COMP
+        relative_url: /vnn-comp/
+      - name: History
+        relative_url: /history/
       - name: Editions
         editions: /editions.json
 
@@ -115,7 +121,7 @@ conference:
 
   # Information boxes
   info_bars:
-    - text: "**Preliminary information.** SAIV 2027 will be held as a standalone event for the first time. All dates are preliminary; the venue, paper deadlines, and registration details will be announced soon."
+    - text: "**Preliminary information.** All dates are preliminary; the venue, paper deadlines, and registration details will be announced soon."
       color: warning
       main_only: true
 

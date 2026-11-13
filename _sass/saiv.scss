@@ -73,13 +73,15 @@
   }
 }
 
-// "SAIV week" overview
-.week-event {
+// "SAIV week" overview and the edition list on the History page
+.week-event,
+.edition {
   border-left: 4px solid $primary;
   padding: .25rem 0 .25rem 1rem;
   margin-bottom: 1.25rem;
 
-  .week-date {
+  .week-date,
+  .edition-meta {
     font-size: .9rem;
     font-weight: 600;
     color: $primary;
